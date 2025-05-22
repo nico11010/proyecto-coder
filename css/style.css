@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/*!-----header-----*/
+
+header{
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+header img{
+
+    max-width: 100px;
+
+}
+
+
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+header nav ul li a:hover{
+    border-color: white;
+}
+
+header nav ul li a:active{
+    color: black;
+    background-color: white;
+}
+
+/*?-----main-----*/
+
+#title-main{
+    font-family: "Rock Salt", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+
+    color: white;
+
+    text-align: center;
+    align-content: center;
+    height: 84vh;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+main{
+    background-color: black;
+    color: white;
+
+}
+
+main #contenido-pagina div img{
+    max-width: 300px;
+}
+
+main #contenido-pagina div h2{
+    text-transform: uppercase;
+}
+
+main #contenido-pagina{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 84vh;
+    margin: 20px 15px;
+
+    text-align: center;
+}
+
+main #contenido-pagina div ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+
+main #contenido-pagina .box-informacion{
+    
+    
+    border-radius: 25px;
+    
+    background-color: rgb(22, 20, 20);
+    
+    padding: 10px;
+    
+}
+
+main #contenido-pagina .box-informacion:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    background-color: black;
+}
+
+main #final-main{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main #final-main #texto{
+
+    width: 50%;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+main #final-main #texto h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 15px 0px;
+    
+}
+
+main #final-main #texto p{
+    font-size: 20px;
+    margin: 25px 0px;
+}
+
+main #final-main #img-section-index{
+
+
+    background-image: url(../img/rack-musica.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 800px;
+
+    text-align: center;
+    align-content: center;
+    
+
+
+    font-family: "Rock Salt", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+
+    color: white;
+    
+}
+
+
+/**-----footer-----*/
+
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+footer a img{
+    max-width: 50px;
+    margin: 0px 10px;
+}
