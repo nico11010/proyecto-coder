@@ -200,6 +200,16 @@ main #final-main #img-section-index{
 }
 
 
+/*---relleno---*/
+
+#relleno{
+
+    width: 100%;
+    height: 800px;
+
+}
+
+
 /**-----footer-----*/
 
 footer{
