@@ -20,6 +20,9 @@ body{
 header{
     background-color: black;
 
+    height: 100px;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,22 +70,27 @@ header nav ul li a:active{
 
 /*?-----main-----*/
 
-#title-main{
-    font-family: "Rock Salt", cursive;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 4rem;
 
+main #title-main{
+    display: flex;
     color: white;
 
-    text-align: center;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     height: 84vh;
     background-image: url(../img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+main #title-main h1{
+    font-family: "Rock Salt", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    margin: 20px;
 }
 
 
@@ -104,8 +112,9 @@ main #contenido-pagina{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 84vh;
-    margin: 20px 15px;
+
+    height: 800px;
+
 
     text-align: center;
 }
@@ -201,3 +210,90 @@ footer a img{
     max-width: 50px;
     margin: 0px 10px;
 }
+
+/*----- media queris ------*/
+
+@media screen and (max-width: 1149px){
+
+    header{
+        justify-content: flex-end;
+    }
+
+    header #logo{
+        display: none; 
+    }
+
+    main #contenido-pagina{
+        flex-wrap: wrap;
+        height: auto;
+        margin: 30px 0;
+    }
+
+    main #contenido-pagina .box-informacion{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 999px){
+    main #final-main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main #final-main #texto{
+        border: solid 2px white;
+        height: auto;
+        width: 80%;
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    main #final-main #img-section-index{
+        margin-top: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 899px){
+
+    header nav ul{
+        display: none;
+        /*flex-direction: column;
+        text-align: center;*/
+    }
+
+    header nav ul li{
+        margin: 15px 0px;
+    }
+
+    main #title-main{ 
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+    main #final-main #img-section-index{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 520px){
+
+    main #title-main{
+        background-image: url(../img/banne-2.png);
+        background-size: contain;
+        background-attachment: scroll;
+
+        height: 520px;
+    }
+
+    main #title-main h1{
+        font-size: 2rem;
+
+    }
+}
+
