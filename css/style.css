@@ -90,11 +90,11 @@ main{
 
 }
 
-main #contenido-pagina div img{
+main #contenido-pagina .box-informacion img{
     max-width: 300px;
 }
 
-main #contenido-pagina div h2{
+main #contenido-pagina .box-informacion h2{
     text-transform: uppercase;
 }
 
@@ -109,7 +109,12 @@ main #contenido-pagina{
     text-align: center;
 }
 
-main #contenido-pagina div ul li{
+
+main #contenido-pagina .box-informacion ul{
+    padding: 0;
+}
+
+main #contenido-pagina .box-informacion ul li{
     list-style: none;
     margin: 10px 0px;
 }
@@ -119,9 +124,8 @@ main #contenido-pagina .box-informacion{
     
     
     border-radius: 25px;
-    
-    background-color: rgb(33, 37, 41);
-    
+    background-color: black;
+    border: solid 2px white;
     padding: 10px;
     
 }
@@ -143,10 +147,14 @@ main #final-main{
 main #final-main #texto{
 
     width: 50%;
-    height: 600px;
+    height: 800px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
 
 
 }
@@ -161,6 +169,10 @@ main #final-main #texto h2{
 main #final-main #texto p{
     font-size: 20px;
     margin: 25px 0px;
+}
+
+main #final-main #texto img{
+    max-width: 150px;
 }
 
 main #final-main #img-section-index{
@@ -192,13 +204,19 @@ main #final-main #img-section-index{
 
 footer{
     display: flex;
-    background-color: black;
-    justify-content: center;
+    padding: 10px;
+    background-color: rgb(33, 37, 41);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-footer a img{
-    max-width: 50px;
-    margin: 0px 10px;
+footer p{
+    margin: 0;
+}
+
+footer #redes-sociales a img{
+    max-width: 30px;
 }
 
 /*----- media queris ------*/
@@ -231,11 +249,9 @@ footer a img{
     }
 
     main #final-main #texto{
-        border: solid 2px white;
         height: auto;
         width: 100%;
-        border-radius: 15px;
-        padding: 25px;
+        padding: 20px;
     }
 
     main #final-main #img-section-index{
@@ -269,21 +285,53 @@ footer a img{
     main #final-main #img-section-index{
         display: none;
     } 
+
+    footer{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 520px){
 
-    main #title-main{
+    main #title-main {
         background-image: url(../img/banne-2.png);
-        background-size: contain;
-        background-attachment: scroll;
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll; 
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        height: 520px;
+        height: 50vh;
+        margin: 0;
+        padding: 0;
     }
 
-    main #title-main h1{
+    main #title-main h1 {
         font-size: 2rem;
-
     }
 }
 
+
+@media screen and (max-width: 374px){
+
+    main #contenido-pagina .box-informacion{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    main #contenido-pagina .box-informacion img{
+        width: 100%;
+    }
+
+    main #final-main #texto{
+        margin: 0;
+        padding: 0;
+    }
+
+}
