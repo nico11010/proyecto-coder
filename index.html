@@ -12,19 +12,40 @@
 <body>
     <header>
 
-        <a id="logo" href="index.html"><img src="./img/logo-vinilo.png" alt="logo"></a>
-        
-        <nav>
-            
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/catalogo.html">Catalogo</a></li>
-                <li><a href="./pages/equipos-de-audio.html">Equipos de audio</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-            
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./img/logo-vinilo.png" alt="La Caseteria"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/equipos-de-audio.html">Equipos de audio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+
+                </div>
+            </div>
         </nav>
+        
     </header>
     
     <main>

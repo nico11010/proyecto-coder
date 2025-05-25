@@ -18,14 +18,14 @@ body{
 /*!-----header-----*/
 
 header{
-    background-color: black;
+    /*background-color: black;
 
     height: 100px;
     width: 100%;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
 
     position: sticky;
     top: 0;
@@ -35,38 +35,28 @@ header{
 
 header img{
 
-    max-width: 100px;
+    max-width: 80px;
 
 }
 
 
 
-header nav ul{
+/*header nav ul{
     display: flex;
 }
 
 header nav ul li{
     list-style: none;
     margin: 0px 20px;
-}
+}*/
 
-header nav ul li a{
+.nav-item{
     text-decoration: none;
     text-transform: uppercase;
-    color:white;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
+    color:white; 
+    margin: 0px 15px;
 }
 
-header nav ul li a:hover{
-    border-color: white;
-}
-
-header nav ul li a:active{
-    color: black;
-    background-color: white;
-}
 
 /*?-----main-----*/
 
@@ -130,7 +120,7 @@ main #contenido-pagina .box-informacion{
     
     border-radius: 25px;
     
-    background-color: rgb(22, 20, 20);
+    background-color: rgb(33, 37, 41);
     
     padding: 10px;
     
@@ -215,13 +205,13 @@ footer a img{
 
 @media screen and (max-width: 1149px){
 
-    header{
+    /*header{
         justify-content: flex-end;
     }
 
     header #logo{
         display: none; 
-    }
+    }*/
 
     main #contenido-pagina{
         flex-wrap: wrap;
@@ -243,7 +233,7 @@ footer a img{
     main #final-main #texto{
         border: solid 2px white;
         height: auto;
-        width: 80%;
+        width: 100%;
         border-radius: 15px;
         padding: 25px;
     }
@@ -257,15 +247,15 @@ footer a img{
 
 @media screen and (max-width: 899px){
 
-    header nav ul{
+    /*header nav ul{
         display: none;
-        /*flex-direction: column;
-        text-align: center;*/
+        flex-direction: column;
+        text-align: center;
     }
 
     header nav ul li{
         margin: 15px 0px;
-    }
+    }*/
 
     main #title-main{ 
         flex-direction: column;
