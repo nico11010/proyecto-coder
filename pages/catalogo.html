@@ -44,13 +44,15 @@
         </nav>
     </header>
 
-    <main id="catalogo">
-        <aside id="aside-catalogo">
-            <ul>   
+    <main id="catalogo" class="container-fluid">
+    <div class="row">
+        <!-- Aside -->
+        <nav id="aside-catalogo" class="col-lg-2 d-none d-lg-block bg-dark text-white sticky-top py-4">
+            <ul class="list-unstyled">
                 <li>
                     <h4>Vinilos</h4>
                     <hr>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Rock</a></li>
                         <li><a href="#">Pop</a></li>
                         <li><a href="#">Grunge</a></li>
@@ -62,7 +64,7 @@
                 <li>
                     <h4>Cd's</h4>
                     <hr>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Rock</a></li>
                         <li><a href="#">Pop</a></li>
                         <li><a href="#">Grunge</a></li>
@@ -74,7 +76,7 @@
                 <li>
                     <h4>Cassettes</h4>
                     <hr>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="#">Rock</a></li>
                         <li><a href="#">Pop</a></li>
                         <li><a href="#">Grunge</a></li>
@@ -84,33 +86,55 @@
                     </ul>
                 </li>        
             </ul>
-        </aside>
+        </nav>
 
-        <section class="grid-galeria">
-            <div class="grid-item">
-                <h3>Producto</h3>
+        <div class="d-lg-none bg-dark text-white px-3 py-2">
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuMovil">
+                Menú
+            </button>
+            <div id="menuMovil" class="collapse mt-2">
+                <ul class="list-unstyled">
+                <li>
+                    <h4>Vinilos</h4>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Pop</a></li>
+                        <li><a href="#">Grunge</a></li>
+                        <li><a href="#">Clasico</a></li>
+                        <li><a href="#">Blues</a></li>
+                        <li><a href="#">Metal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Cd's</h4>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Pop</a></li>
+                        <li><a href="#">Grunge</a></li>
+                        <li><a href="#">Clasico</a></li>
+                        <li><a href="#">Blues</a></li>
+                        <li><a href="#">Metal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Cassettes</h4>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Pop</a></li>
+                        <li><a href="#">Grunge</a></li>
+                        <li><a href="#">Clasico</a></li>
+                        <li><a href="#">Blues</a></li>
+                        <li><a href="#">Metal</a></li>
+                    </ul>
+                </li>        
+            </ul>
             </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
-            <div class="grid-item">
-                <h3>Producto</h3>
-            </div>
+        </div>
+
+        <section class="col-lg-10 grid-galeria">
             <div class="grid-item">
                 <h3>Producto</h3>
             </div>
@@ -148,14 +172,14 @@
                 <h3>Producto</h3>
             </div>
         </section>
-
-    </main>
+    </div>
+</main>
 
     <footer>
 
         <p>© 2025 La Caseteria - Todos los derechos reservados</p>
 
-        <div id="redes-sociales">
+        <div id="footer-redes">
             <a href="https://web.whatsapp.com" target="_blank"><img src="../img/iconos/whatsapp.png" alt="WhatsApp"></a>
             <a href="https://youtube.com" target="_blank"><img src="../img/iconos/youtube.png" alt="YouTube"></a>
             <a href="https://instagram.com" target="_blank"><img src="../img/iconos/instagram.png" alt="Instagram"></a>

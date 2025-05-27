@@ -18,37 +18,15 @@ body{
 /*!-----header-----*/
 
 header{
-    /*background-color: black;
-
-    height: 100px;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;*/
-
     position: sticky;
     top: 0;
     z-index: 1000;
-
 }
 
 header img{
-
     max-width: 80px;
-
 }
 
-
-
-/*header nav ul{
-    display: flex;
-}
-
-header nav ul li{
-    list-style: none;
-    margin: 0px 20px;
-}*/
 
 .nav-item{
     text-decoration: none;
@@ -58,13 +36,17 @@ header nav ul li{
 }
 
 
-/*?-----main-----*/
+/*?-----main-titulo-----*/
 
-
-main #title-main{
-    display: flex;
+main{
+    background-color: black;
     color: white;
 
+}
+
+main #title-index{
+    display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     height: 84vh;
@@ -75,7 +57,7 @@ main #title-main{
     background-attachment: fixed;
 }
 
-main #title-main h1{
+main #title-index h1{
     font-family: "Rock Salt", cursive;
     font-weight: 600;
     font-style: normal;
@@ -83,179 +65,148 @@ main #title-main h1{
     margin: 20px;
 }
 
+/*?-----main-section-----*/
 
-main{
-    background-color: black;
-    color: white;
-
-}
-
-main #contenido-pagina .box-informacion img{
-    max-width: 300px;
-}
-
-main #contenido-pagina .box-informacion h2{
-    text-transform: uppercase;
-}
-
-main #contenido-pagina{
+main #section-index{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     height: 800px;
-
-
     text-align: center;
 }
 
-
-main #contenido-pagina .box-informacion ul{
-    padding: 0;
-}
-
-main #contenido-pagina .box-informacion ul li{
-    list-style: none;
-    margin: 10px 0px;
-}
-
-
-main #contenido-pagina .box-informacion{
-    
-    
+main #section-index .box-information{
     border-radius: 25px;
     background-color: black;
     border: solid 2px white;
-    padding: 10px;
-    
+    padding: 10px; 
 }
 
-main #contenido-pagina .box-informacion:hover{
+main #section-index .box-information:hover{
     transform: scale(1.05);
     transition: 0.3s ease;
     box-shadow: 0 0 15px rgb(255, 255, 255);
     background-color: black;
 }
 
-main #final-main{
+main #section-index .box-information img{
+    max-width: 300px;
+}
+
+main #section-index .box-information h2{
+    text-transform: uppercase;
+}
+
+main #section-index .box-information ul{
+    padding: 0;
+}
+
+main #section-index .box-information ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+
+
+/*?-----main-final-section-----*/
+
+main #final-section-index{
     display: flex;
     padding: 20px;
     justify-content: space-around;
     align-items: center;
 }
 
-main #final-main #texto{
-
+main #final-section-index #text{
     width: 50%;
     height: 800px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     text-align: center;
-
-
 }
 
-main #final-main #texto h2{
+main #final-section-index #text h2{
     text-transform: uppercase;
     font-size: 3rem;
     margin: 15px 0px;
-    
 }
 
-main #final-main #texto p{
+main #final-section-index #text p{
     font-size: 20px;
     margin: 25px 0px;
 }
 
-main #final-main #texto img{
+main #final-section-index #text img{
     max-width: 150px;
 }
 
-main #final-main #img-section-index{
-
-
+main #final-section-index #img-aside-section-index{
     background-image: url(../img/rack-musica.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 600px;
     height: 800px;
-
     text-align: center;
     align-content: center;
-    
-
-
     font-family: "Rock Salt", cursive;
     font-weight: 600;
     font-style: normal;
     font-size: 3rem;
-
-    color: white;
-    
+    color: white; 
 }
 
-/*-----main catalogo-------*/
+/*-----main-catalogo-------*/
 
-#catalogo{
-    display: flex;
+#aside-catalogo {  
+    top: 80px; 
 }
 
-#catalogo #aside-catalogo{
-    position: fixed;
+#aside-catalogo.sticky-top{
     top: 80px;
-    height: 100vh;
-    width: 200px;
-    background-color: #343a40;
+    z-index: 990; 
+}
+
+#aside-catalogo a{
     color: white;
+    text-decoration: none;
+}
+
+#aside-catalogo a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+    transition: 0.2s ease;
+}
+
+#menuMovil a {
+    color: white;
+    text-decoration: none;
+}
+
+#menuMovil a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+    transition: 0.2s ease;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 2px solid white;
+    border-radius: 15px;
     padding: 1rem;
+    text-align: center;
 }
 
 #catalogo #aside-catalogo ul li h4{
-
     margin-top: 15px;
-}
-
-#catalogo #aside-catalogo ul li{
-    list-style: none;
-}
-
-#catalogo #aside-catalogo ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-#catalogo .grid-galeria{
-    display: grid;
-
-    width: 100%;
-    height: auto;
-    margin-left: 200px;
-    padding: 20px;
-
-    grid-template-rows: 350px 350px 350px 350px 350px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-
-#catalogo .grid-galeria .grid-item{
-    border: solid 2px white;
-    border-radius: 15px;
-}
-
-
-/*---relleno---*/
-
-#relleno{
-
-    width: 100%;
-    height: 800px;
-
 }
 
 
@@ -276,7 +227,7 @@ footer p{
     margin: 0;
 }
 
-footer #redes-sociales a img{
+footer #footer-redes a img{
     max-width: 30px;
 }
 
