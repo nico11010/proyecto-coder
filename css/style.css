@@ -369,6 +369,7 @@ footer{
     background-color: rgb(33, 37, 41);
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     color: white;
     z-index: 1000;
