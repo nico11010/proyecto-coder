@@ -36,6 +36,7 @@ header img{
 /*?-----main-titulo-----*/
 
 main{
+
     background-color: black;
     color: white;
 
@@ -75,7 +76,7 @@ main #section-index{
 main #section-index .box-information{
     border-radius: 25px;
     background-color: black;
-    border: solid 2px white;
+    border: solid 2px rgba(255, 255, 255, 0.493);
     padding: 10px; 
 }
 
@@ -133,7 +134,7 @@ main #final-section-index #text p{
     font-size: 20px;
     margin: 20px 0px;
     padding: 20px;
-    border: solid 1px white;
+    border: solid 1px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 
@@ -208,7 +209,7 @@ main #final-section-index #img-aside-section-index{
 }
 
 .grid-item {
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     padding: 1rem;
     text-align: center;
@@ -323,7 +324,7 @@ main #final-section-index #img-aside-section-index{
     line-height: 1.6;
     padding: 20px;
     border-radius: 10px;
-    border: solid 1px white;
+    border: solid 1px rgba(255, 255, 255, 0.493);
 }
 
 .la-caseteria{
@@ -389,6 +390,10 @@ footer #footer-redes a img{
     max-width: 30px;
 }
 
+.contacto{
+    background-color: black;
+}
+
 /*----- media-querys ------*/
 
 @media screen and (max-width: 1399px){
@@ -413,13 +418,14 @@ footer #footer-redes a img{
     main #final-section-index{
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     main #final-section-index #text{
         height: auto;
         width: 100%;
-        padding: 20px;
     }
+
 
     main #final-section-index #img-aside-section-index{
         margin-top: 50px;
@@ -432,6 +438,8 @@ footer #footer-redes a img{
     
 
     .grid-sobre-nosotros {
+        margin: 0;
+        width: 90%;
         grid-template-columns: 1fr;
         grid-template-areas:
             "la-caseteria"
@@ -463,6 +471,22 @@ footer #footer-redes a img{
 @media screen and (max-width: 899px){
     main #title-index{ 
         flex-direction: column;
+    }
+
+    main #final-section-index #text h2{
+        font-size: 2rem;
+    }
+
+    main #final-section-index #text p{
+        font-size: 1rem;
+    }
+
+    .grid-item-sobre-nosotros h2{
+        font-size: 2rem;
+    }
+
+    .grid-item-sobre-nosotros p{
+        font-size: 1rem;
     }
 }
 
