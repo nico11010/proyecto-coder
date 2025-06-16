@@ -1,0 +1,22 @@
+
+@use "./base/funcionalidades";
+@use "./components/header";
+@use "./components/main";
+@use "./components/footer";
+@use "./components/catalogo";
+@use "./components/sobre_nosotros";
+@use "./components/contacto";
+@use "./base/querys";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
