@@ -1,0 +1,161 @@
+@media screen and (max-width: 1399px){
+    #catalogo .grid-galeria{
+        grid-template-columns: 40% 40%;
+    }
+
+}
+
+@media screen and (max-width: 1149px){
+
+    main #section-index{
+        flex-wrap: wrap;
+        height: auto;
+        margin: 30px 0;
+    }
+
+    main #section-index .box-information{
+        margin: 20px;
+    }
+
+    main #final-section-index{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    main #final-section-index #text{
+        height: auto;
+        width: 100%;
+    }
+
+
+    main #final-section-index #img-aside-section-index{
+        margin-top: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 990px){
+    
+
+    main .div-cont-sobre-nosotros .grid-sobre-nosotros {
+        margin: 0;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "la-caseteria"
+            "los-comienzos"
+            "img-los-comienzos"
+            "evolucion-y-pasion"
+            "img-evolucion-y-pasion"
+            "hoy-y-siempre"
+            "img-hoy-y-siempre"
+            "img-servicio-tecnico";
+    }
+
+    .img-servicio-tecnico{
+        display: none;
+    }
+
+    #catalogo .grid-galeria{
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: 40% 40%;
+        
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 899px){
+    main #title-index{ 
+        flex-direction: column;
+    }
+
+    main #final-section-index #text h2{
+        font-size: 2rem;
+    }
+
+    main #final-section-index #text p{
+        font-size: 1rem;
+    }
+
+    main .div-cont-sobre-nosotros .grid-sobre-nosotros .grid-item-sobre-nosotros h2{
+        font-size: 2rem;
+    }
+
+    main .div-cont-sobre-nosotros .grid-sobre-nosotros .grid-item-sobre-nosotros p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    #catalogo .grid-galeria{
+        justify-content: center;
+        grid-template-columns: 60%;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    main #final-section-index #img-aside-section-index{
+        display: none;
+    } 
+    
+    #catalogo .grid-galeria{
+        grid-template-columns: 70%;
+    } 
+}
+
+
+@media screen and (max-width: 520px){
+
+    main #title-index{
+        background-image: url(../img/index/banne-2.png);
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll; 
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    main #title-index h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:485px) {
+    #catalogo .grid-galeria{
+        grid-template-columns: 90%;
+    } 
+}
+
+@media screen and (max-width: 374px){
+
+    main #section-index .box-information{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    main #section-index .box-information img{
+        width: 100%;
+    }
+
+    main #final-section-index #text{
+        margin: 0;
+        padding: 0;
+    }
+
+}

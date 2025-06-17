@@ -5,7 +5,13 @@
             li{
                 a{
                     color: white;
-                    text-decoration: none;    
+                    text-decoration: none;
+                    
+                    &:hover{
+                        text-decoration: underline;
+                        color: #ffc107;
+                        transition: 0.2s ease; 
+                    }
                 }
 
                 h4{
@@ -31,6 +37,12 @@ main{
         a{
             color: white;
             text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+                color: #ffc107;
+                transition: 0.2s ease;
+            }
         }
     }
 
@@ -56,6 +68,11 @@ main{
             object-fit: cover;
             margin-bottom: 10px;
         }
+
+        &:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease; 
+        }
     }
 
     .switch-pages{
@@ -72,6 +89,10 @@ main{
 
             img{
                 max-width: 30px;
+            }
+
+            &:hover{
+                color: rgb(255, 255, 255);
             }
         }
     }
