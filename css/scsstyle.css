@@ -176,8 +176,8 @@ main .grid-galeria {
   display: grid;
   justify-content: space-around;
   align-items: center;
-  grid-template-columns: 28% 28% 28%;
-  grid-auto-rows: 540px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 600px;
   gap: 40px;
   padding: 20px;
 }
@@ -296,7 +296,7 @@ main .hoy-y-siempre {
 
 @media screen and (max-width: 1399px) {
   #catalogo .grid-galeria {
-    grid-template-columns: 40% 40%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 1149px) {
