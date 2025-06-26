@@ -403,6 +403,10 @@ main .hoy-y-siempre {
   main #title-index h1 {
     font-size: 2rem;
   }
+  #catalogo .grid-galeria {
+    justify-content: center;
+    grid-template-columns: 85%;
+  }
 }
 @media screen and (max-width: 374px) {
   main #section-index .box-information {
