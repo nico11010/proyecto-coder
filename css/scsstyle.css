@@ -8,6 +8,15 @@ header {
 }
 header img {
   max-width: 80px;
+  animation: girar 4s linear infinite;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 header .nav-item {
   text-decoration: none;
@@ -194,13 +203,19 @@ main .grid-item:hover {
 main .grid-item img {
   width: 100%;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 13px;
   object-fit: cover;
   margin-bottom: 10px;
 }
 main .grid-item:hover {
   transform: scale(1.05);
   transition: 0.3s ease;
+}
+main .grid-item h2 {
+  font-size: 25px;
+}
+main .grid-item h3 {
+  font-size: 18px;
 }
 main .switch-pages {
   display: flex;
@@ -339,7 +354,7 @@ main .hoy-y-siempre {
   #catalogo .grid-galeria {
     justify-content: space-around;
     align-items: center;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 899px) {
@@ -362,15 +377,12 @@ main .hoy-y-siempre {
 @media screen and (max-width: 799px) {
   #catalogo .grid-galeria {
     justify-content: center;
-    grid-template-columns: 60%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 600px) {
   main #final-section-index #img-aside-section-index {
     display: none;
-  }
-  #catalogo .grid-galeria {
-    grid-template-columns: 70%;
   }
 }
 @media screen and (max-width: 520px) {
@@ -390,11 +402,6 @@ main .hoy-y-siempre {
   }
   main #title-index h1 {
     font-size: 2rem;
-  }
-}
-@media screen and (max-width: 485px) {
-  #catalogo .grid-galeria {
-    grid-template-columns: 90%;
   }
 }
 @media screen and (max-width: 374px) {

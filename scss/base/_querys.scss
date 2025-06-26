@@ -61,7 +61,7 @@
     #catalogo .grid-galeria{
         justify-content: space-around;
         align-items: center;
-        grid-template-columns: 40% 40%;
+        grid-template-columns: repeat(3,1fr);
         
     }
     
@@ -96,7 +96,7 @@
 
     #catalogo .grid-galeria{
         justify-content: center;
-        grid-template-columns: 60%;
+        grid-template-columns: repeat(2, 1fr);
     } 
 }
 
@@ -105,9 +105,7 @@
         display: none;
     } 
     
-    #catalogo .grid-galeria{
-        grid-template-columns: 70%;
-    } 
+ 
 }
 
 
@@ -135,11 +133,7 @@
     }
 }
 
-@media screen and (max-width:485px) {
-    #catalogo .grid-galeria{
-        grid-template-columns: 90%;
-    } 
-}
+
 
 @media screen and (max-width: 374px){
 
