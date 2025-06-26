@@ -186,15 +186,9 @@ main .grid-item {
   border-radius: 15px;
   text-align: center;
 }
-main .grid-item:hover {
-  border: 2px solid white;
-  box-shadow: 0 0 10px 1px rgba(180, 179, 179, 0.2);
-  transition: 0.2s ease;
-}
 main .grid-item img {
   width: 100%;
   height: 300px;
-  border-radius: 15px;
   object-fit: cover;
   margin-bottom: 10px;
 }
