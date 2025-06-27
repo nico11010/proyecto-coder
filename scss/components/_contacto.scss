@@ -1,3 +1,5 @@
+@use "../base/funcionalidades";
+
 .contacto{
-    background-color: black;
+    background-color: funcionalidades.$colorPrimario;
 }

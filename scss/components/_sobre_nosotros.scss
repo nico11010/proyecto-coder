@@ -1,9 +1,9 @@
+@use "../base/funcionalidades";
+
 main{
     .div-cont-sobre-nosotros{
-        display: flex;
+        @include funcionalidades.flex(flex, center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
 
         h1{
@@ -15,7 +15,7 @@ main{
         }
 
         .grid-sobre-nosotros{
-            display: grid;
+            @include funcionalidades.flex(grid, center,center);
             width: 80%;
             grid-template-columns: repeat(3, 1fr);
 
@@ -32,9 +32,6 @@ main{
             "img-servicio-tecnico hoy-y-siempre hoy-y-siempre";
             ;
 
-            justify-content: center;
-            align-items: center;
-
             text-align: center;
 
             .grid-item-sobre-nosotros{
@@ -42,7 +39,7 @@ main{
                 h2{
                     text-transform: uppercase;
                     font-size: 2.2rem;
-                    color: white;
+                    color: funcionalidades.$colorSecundario;
                     margin: 20px 0 10px 0;
                 }
 
@@ -52,7 +49,7 @@ main{
                     line-height: 1.6;
                     padding: 20px;
                     border-radius: 10px;
-                    border: solid 1px rgba(255, 255, 255, 0.493);
+                    border: solid 1px funcionalidades.$boxBorder;
                 }
             
                 img{

@@ -1,3 +1,5 @@
+@use "../base/funcionalidades";
+
 header{
     position: sticky;
     top: 0;
@@ -19,7 +21,7 @@ header{
     .nav-item{
     text-decoration: none;
     text-transform: uppercase;
-    color:white; 
+    color: funcionalidades.$colorSecundario; 
     margin: 0px 15px;
     }
 }

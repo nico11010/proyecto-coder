@@ -1,12 +1,12 @@
+@use "../base/funcionalidades";
+
 main{
-    background-color: black;
-    color: white;
+    background-color: funcionalidades.$colorPrimario;
+    color: funcionalidades.$colorSecundario;
 
     #title-index{
-        display: flex;
-        color: white;
-        justify-content: center;
-        align-items: center;
+        @include funcionalidades.flex(flex,center,center);
+        color: funcionalidades.$colorSecundario;
         height: 84vh;
         background-image: url(../img/index/banner.png);
         background-size: cover;
@@ -24,16 +24,14 @@ main{
     } 
 
     #section-index{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include funcionalidades.flex(flex,space-around,center);
         height: 800px;
         text-align: center;
 
         .box-information{
             border-radius: 25px;
-            background-color: black;
-            border: solid 2px rgba(255, 255, 255, 0.493);
+            background-color: funcionalidades.$colorPrimario;
+            border: solid 2px funcionalidades.$boxBorder;
             padding: 10px; 
 
             img{
@@ -54,25 +52,21 @@ main{
             &:hover{
                 transform: scale(1.05);
                 transition: 0.3s ease;
-                box-shadow: 0 0 15px rgb(255, 255, 255);
-                background-color: black;
+                box-shadow: 0 0 20px funcionalidades.$hoverGray;
+                background-color: funcionalidades.$lightBlack;
             }
         }
     }
 
     #final-section-index{
-        display: flex;
+        @include funcionalidades.flex(flex,space-around,center);
         padding: 20px;
-        justify-content: space-around;
-        align-items: center;
 
         #text{
             width: 50%;
             height: 800px;
-            display: flex;
+            @include funcionalidades.flex(flex,space-around,center);
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             text-align: center;
 
             div{
@@ -110,7 +104,7 @@ main{
         font-weight: 600;
         font-style: normal;
         font-size: 3rem;
-        color: white; 
+        color: funcionalidades.$colorSecundario; 
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.5);
     }
 

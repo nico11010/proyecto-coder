@@ -1,1 +1,15 @@
- 
+$colorPrimario: black;
+$colorSecundario: white;
+$hoverOrange:  #ffc107;
+$hoverGray: rgba(196, 193, 193, 0.2);
+$graySwitchPage: rgba(255, 255, 255, 0.541);
+$lightBlack: rgb(33, 37, 41);
+$boxBorder: rgba(255, 255, 255, 0.5);
+
+
+
+@mixin flex($flex,$justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}

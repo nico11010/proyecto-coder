@@ -1,14 +1,16 @@
+@use "../base/funcionalidades";
+
 footer{
     position: sticky;
     display: flex;
     flex-direction: column-reverse;
     padding: 10px 20px;
-    background-color: rgb(33, 37, 41);
+    background-color: funcionalidades.$lightBlack;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    color: white;
+    color: funcionalidades.$colorSecundario;
     z-index: 1000;
     gap: 15px;
 
