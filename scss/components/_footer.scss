@@ -1,13 +1,11 @@
 @use "../base/funcionalidades";
 
 footer{
+    @include funcionalidades.flex(flex, center, center);
     position: sticky;
-    display: flex;
     flex-direction: column-reverse;
     padding: 10px 20px;
     background-color: funcionalidades.$lightBlack;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     flex-wrap: wrap;
     color: funcionalidades.$colorSecundario;

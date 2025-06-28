@@ -50,10 +50,7 @@ main{
             }
 
             &:hover{
-                transform: scale(1.05);
-                transition: 0.3s ease;
-                box-shadow: 0 0 20px funcionalidades.$hoverGray;
-                background-color: funcionalidades.$lightBlack;
+                @extend %hover-box;
             }
         }
     }
@@ -63,8 +60,7 @@ main{
         padding: 20px;
 
         #text{
-            width: 50%;
-            height: 800px;
+            @include funcionalidades.size(800px, 50%);
             @include funcionalidades.flex(flex,space-around,center);
             flex-direction: column;
             text-align: center;
@@ -72,12 +68,12 @@ main{
             div{
                 h2{
                     text-transform: uppercase;
-                    font-size: 3rem;
+                    font-size: funcionalidades.$fontSizeH2;
                     margin: 15px 0px;
                 }
 
                 p{
-                    font-size: 20px;
+                    font-size: funcionalidades.$fontSizeText;
                     margin: 20px 0px;
                     padding: 20px;
                     border: solid 1px rgba(255, 255, 255, 0.5);
@@ -96,8 +92,7 @@ main{
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        width: 600px;
-        height: 800px;
+        @include funcionalidades.size(800px, 600px);
         text-align: center;
         align-content: center;
         font-family: "Rock Salt", cursive;

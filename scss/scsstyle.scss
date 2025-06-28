@@ -1,6 +1,5 @@
 
 @use "./base/funcionalidades";
-@use "./base/querys";
 @use "./base/generales";
 @use "./components/header";
 @use "./components/main";
@@ -8,4 +7,5 @@
 @use "./components/catalogo";
 @use "./components/sobre_nosotros";
 @use "./components/contacto";
+@use "./base/querys";
 

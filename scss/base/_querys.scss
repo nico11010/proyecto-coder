@@ -1,3 +1,5 @@
+@use "../base/funcionalidades";
+
 @media screen and (max-width: 1399px){
     #catalogo .grid-galeria{
         grid-template-columns: repeat(3, 1fr);
@@ -24,8 +26,7 @@
     }
 
     main #final-section-index #text{
-        height: auto;
-        width: 100%;
+        @include funcionalidades.size(auto, 100%);
     }
 
 
@@ -118,10 +119,8 @@
         background-repeat: no-repeat;
         background-attachment: scroll; 
         
-        display: flex;
+        @include funcionalidades.flex(flex, center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         height: 50vh;
         margin: 0;

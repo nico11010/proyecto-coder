@@ -63,23 +63,19 @@ main{
 
         &:hover{
 
-                border: 2px solid funcionalidades.$colorSecundario;
-                box-shadow: 0 0 20px 1px funcionalidades.$hoverGray;
-                transition: 0.2s ease;
+            @extend %hover-box;
+            
             }
 
         img{
-            width: 100%;
-            height: 300px;
+
+            @include funcionalidades.size(300px, 100%);
             border-radius: 13px;
             object-fit: cover;
             margin-bottom: 10px;
         }
 
-        &:hover{
-            transform: scale(1.05);
-            transition: 0.3s ease; 
-        }
+        
 
         h2{
             font-size:  25px;
